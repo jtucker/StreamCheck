@@ -1,0 +1,81 @@
+﻿{
+
+  "netflix_instant": {
+    "url": "http://www.canistream.it/link/go/50e44fb9345ad2fb46000001",
+    "price": "​0",
+    "external_id": "60024938",
+    "date_checked": "​1448306577",
+    "direct_url": "http://dvd.netflix.com/Movie/Star_Trek_Nemesis/60024938",
+    "time": "​0",
+    "friendlyName": "Netflix Instant",
+    "cache": true
+  },
+  "apple_itunes_rental": {
+    "url": "http://www.canistream.it/link/go/4f6ff729f5f807864d00007a",
+    "price": 2.99,
+    "external_id": 648173657,
+    "date_checked": 1448306234,
+    "direct_url": "https://itunes.apple.com/us/movie/critters/id648173657?uo=4&at=10lcsB",
+    "time": 0,
+    "friendlyName": "Apple iTunes Rental",
+    "cache": true
+  },
+  "vudu_rental": {
+    "url": "http://www.canistream.it/link/go/4f2b2376f5f8072b5600003b",
+    "price": "2.99",
+    "date_checked": 1448306233,
+    "direct_url": "http://www.vudu.com/movies/#!content/33654/Critters",
+    "time": 0,
+    "friendlyName": "Vudu Rental",
+    "cache": true
+  },
+  "sony_rental": {
+    "url": "http://www.canistream.it/link/go/5148f0229030fe9c68000000",
+    "price": 2.99,
+    "external_id": "UV0004-NPVA44755_CN-0000000000093677",
+    "date_checked": 1448306235,
+    "direct_url": "https://store.sonyentertainmentnetwork.com/#!/en-us/movies/cid=UV0004-NPVA44755_CN-0000000000093677",
+    "time": 0,
+    "friendlyName": "Sony Entertainment Network",
+    "cache": true
+  },
+  "amazon_prime_instant_video": {
+    "url": "http://www.canistream.it/link/go/50b253b8f5f8077d0b000002",
+    "price": 0,
+    "external_id": "B007EMSW48",
+    "date_checked": 1448304085,
+    "direct_url": "http://www.amazon.com/Hugo-Asa-Butterfield/dp/B007EMSW48%3FSubscriptionId%3DAKIAI2NU2USSCM2WKKVA%26tag%3Dcaistit-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB007EMSW48",
+    "time": 0,
+    "friendlyName": "Amazon Prime Instant",
+    "cache": true
+  },
+  "hulu_movies": {
+    "url": "http://www.canistream.it/link/go/560e1f71f5f8070e33da89d3",
+    "price": 0,
+    "availability": [ "huluplus" ],
+    "external_id": "60607290",
+    "date_checked": 1448304084,
+    "direct_url": "http://www.hulu.com/watch/850359",
+    "time": 0,
+    "friendlyName": "Hulu Plus",
+    "cache": true
+  },
+  "epix": {
+    "url": "http://www.canistream.it/link/go/503a36bdf5f8074e7a000009",
+    "price": 0,
+    "date_checked": 1448304084,
+    "direct_url": "http://www.epixhd.com/hugo/",
+    "time": 0,
+    "friendlyName": "Epix",
+    "cache": true
+  },
+  "crackle": {
+    "url": "http://canistream.it/link/go/5096f34cf5f8074a1800000f",
+    "price": 0,
+    "date_checked": 1448237352,
+    "direct_url": "http://legacyweb-us.crackle.com/c/district-9/district-9/2488095",
+    "time": 0,
+    "friendlyName": "Crackle",
+    "cache": true
+  }
+}
