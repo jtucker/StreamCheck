@@ -6,6 +6,7 @@ open FSharp.Data
 type MovieSearch = JsonProvider<"samples/search.json">
 type MovieDetails = JsonProvider<"samples/details.json">
 
+let httpHeaders = [HttpRequestHeaders.UserAgent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36"]
 let searchApiUrl = "http://www.canistream.it/services/search"
 let queryApiUrl  = "http://www.canistream.it/services/query"
 
@@ -13,11 +14,16 @@ let queryApiUrl  = "http://www.canistream.it/services/query"
 let searchMovie movie =
    Http.RequestString (searchApiUrl,
     query = ["movieName", movie; ],
-    headers = [HttpRequestHeaders.UserAgent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36"] ) |> 
+    headers = httpHeaders ) |> 
    MovieSearch.Parse
-   
-// Get the details of the movie
 
-// get list of things to search for
-
-   
+// get movie MovieDetails
+let getMovieDetails movieId =
+    Http.RequestString(queryApiUrl, 
+        query = ["movieId", movieId; "attributes", "1"; "mediaType", "streaming"], 
+        headers = httpHeaders) |> 
+    MovieDetails.Parse
+    
+searchMovie("harry and the hendersons") |>
+Seq.map(fun movie -> getMovieDetails movie.Id) |> 
+Seq.map(fun movie -> printfn "Amazon: %s" movie.AmazonPrimeInstantVideo.Url)
